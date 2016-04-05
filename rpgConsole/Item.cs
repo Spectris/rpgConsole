@@ -22,14 +22,21 @@ namespace rpgConsole
         /// </summary>
         /// <param name="name"></param>
         /// <param name="price"></param>
-        /// <param name="itemDmg"></param>
+        /// <param name="itemValue"></param>
         /// <param name="itemType"></param>
-        public Item(string name, int price, int itemDmg, ItemType itemType)
+        public Item(string name, int price, int itemValue, ItemType itemType)
         {
             this.name = name;
             this.price = price;
-            this.itemValue = itemDmg;
+            this.itemValue = itemValue;
             this.itemType = itemType;
+        }
+        public string getDetails()
+        {
+            if(this.itemType == ItemType.weapon)
+                return "" + name + "\t Cena: " + price + "\tPožkození: " + itemValue;
+            else
+                return "" + name + "\t Cena: " + price + "\tOchrana: " + itemValue;
         }
     }
 }

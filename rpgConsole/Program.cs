@@ -14,10 +14,12 @@ namespace rpgConsole
             Console.WriteLine("Toto je úvod");
             while (run)                                         //Havní smyčka programu
             {
+                Console.WriteLine(texts.gameMenuEntry);
                 switch (Console.ReadLine().ToLower())
                 {
+                    // '.Replace("\\n", "\n")' after resources string make it possible to use escape sequence
                     case "help":
-                        Console.WriteLine("Nápověda k ovládaní\n   help - zobrazí nápovědu\n   O - zobrazí informace o hře\n   zacit - započíst hru");
+                        Console.WriteLine(texts.helpQuoteMenu.Replace("\\n", "\n"));
                         break;
                     case "o":
                         Console.WriteLine("vypisuji //TODO: zobrazení informací o hře");
@@ -38,7 +40,7 @@ namespace rpgConsole
         private static Player CharacterCreation()
         {
             Console.Write("Zadej jméno tvojí postavy: "); string name = Console.ReadLine();
-            return new Player(name, 20, 1);
+            return new Player(name, 20, 0, 1, 1);
         }
 
         private static void Hra()
@@ -50,7 +52,7 @@ namespace rpgConsole
                 switch (Console.ReadLine().ToLower())
                 {
                     case "help":
-                        Console.WriteLine("Nápověda k ovládaní\n    help - zobrazí nápovědu\n    pruzkum - průzkum okolí (prohledáš široké okolí)\n    prohledat - prohledá bezprostřední oklí hráče\n    boj - započne boj s nalezeným nepřítelem");
+                        Console.WriteLine(texts.helpQuoteGame.Replace("\\n", "\n"));
                         break;
 
                     case "pruzkum":
@@ -64,12 +66,14 @@ namespace rpgConsole
                     case "boj":
                         Console.WriteLine("Začínám boj  //TODO: implementace bojového rozhraní, zahájení boje");
                         //  Test boje
-                        Player ply = new Player("hrac", 10, 1);
                         Enemy enemy = new Enemy("duch", 5, 1);
-                        Fight.start(ply, enemy);
+                        Fight.start(player, enemy);
                         // Konecc testu boje
                         break;
 
+                    case "prehled":
+                        Console.WriteLine(player.getInfo());
+                        break;
                     case "clear": Console.Clear(); break;
 
                     case "menu":

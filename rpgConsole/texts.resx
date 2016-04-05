@@ -120,4 +120,13 @@
   <data name="ArenaEntery" xml:space="preserve">
     <value>Výtej v aréně. Zde máš možnost bojovat proti nejlepším bojovníkům Reichu a vydobýt si tak slávu a bohatstvý</value>
   </data>
+  <data name="gameMenuEntry" xml:space="preserve">
+    <value>&lt;Insert game name here&gt;</value>
+  </data>
+  <data name="helpQuoteGame" xml:space="preserve">
+    <value>Nápověda k ovládaní\n    help - zobrazí nápovědu\n    pruzkum - průzkum okolí (prohledáš široké okolí)\n    prohledat - prohledá bezprostřední oklí hráče\n    boj - započne boj s nalezeným nepřítelem\n    prehled - zobrazí informace o hráči</value>
+  </data>
+  <data name="helpQuoteMenu" xml:space="preserve">
+    <value>Nápověda k ovládaní\n   help - zobrazí nápovědu\n   O - zobrazí informace o hře\n   zacit - započíst hru</value>
+  </data>
 </root>
