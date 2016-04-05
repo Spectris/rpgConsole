@@ -1,0 +1,12 @@
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.config
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.pdb
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\obj\Debug\rpgConsole.exe
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\obj\Debug\rpgConsole.pdb
+C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.config
+C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe
+C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\bin\Debug\rpgConsole.pdb
+C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\obj\Debug\rpgConsole.exe
+C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\obj\Debug\rpgConsole.pdb
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.CodeAnalysisLog.xml
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.lastcodeanalysissucceeded
