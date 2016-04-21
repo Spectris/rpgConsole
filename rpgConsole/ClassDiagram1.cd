@@ -24,21 +24,14 @@
   <Class Name="rpgConsole.Player" Collapsed="true">
     <Position X="6.5" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAACAAAAAAAIIAACAAAAAAAAAAAIAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAACACAAAAAoIAASAAEAAAAAAAAIAAAAgE=</HashCode>
       <FileName>Player.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="rpgConsole.Inventory">
-    <Position X="0.75" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAACAAAAAAAAAAA=</HashCode>
-      <FileName>Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpgConsole.Item">
     <Position X="2.75" Y="1" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAACAAAAAAAAAAAEAAAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAAAAAAACAAAAAAAAAQAEAAAAAAACAAAAAAA=</HashCode>
       <FileName>Item.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -52,14 +45,14 @@
   <Class Name="rpgConsole.Arena" Collapsed="true">
     <Position X="0.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Arena.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="rpgConsole.texts" Collapsed="true">
     <Position X="2.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAgAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAAAAQAAAAAAAABEAAAAQAAAEAgAAAAEAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Enum Name="rpgConsole.ItemType">

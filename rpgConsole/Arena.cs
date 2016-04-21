@@ -9,7 +9,7 @@ namespace rpgConsole
     class Arena
     {
         private static Enemy boss1 = new Enemy("BOSS-EIN", 200, 15);
-        public void EnterArena()
+        public static void EnterArena(Player player)
         {
             Console.WriteLine(texts.ArenaEntery);
 

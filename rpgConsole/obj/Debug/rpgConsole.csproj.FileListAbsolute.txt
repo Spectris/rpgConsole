@@ -8,8 +8,6 @@ C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe
 C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\bin\Debug\rpgConsole.pdb
 C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\obj\Debug\rpgConsole.exe
 C:\Users\Enrich\Desktop\rpgConsole\rpgConsole\obj\Debug\rpgConsole.pdb
-H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.CodeAnalysisLog.xml
-H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.lastcodeanalysissucceeded
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe.config
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\obj\Debug\rpgConsole.exe
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\obj\Debug\rpgConsole.pdb
@@ -17,3 +15,7 @@ C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConso
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\obj\Debug\rpgConsole.csproj.GenerateResource.Cache
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\bin\Debug\rpgConsole.exe
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\bin\Debug\rpgConsole.pdb
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\obj\Debug\rpgConsole.csprojResolveAssemblyReference.cache
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\obj\Debug\rpgConsole.texts.resources
+H:\Dokumenty\Visual Studio 2013\Projects\Skola\rpgConsole\rpgConsole\obj\Debug\rpgConsole.csproj.GenerateResource.Cache
+C:\Users\Enrich\Documents\Visual Studio 2015\Projects\C#\cmd\rpgConsole\rpgConsole\obj\Debug\rpgConsole.csprojResolveAssemblyReference.cache

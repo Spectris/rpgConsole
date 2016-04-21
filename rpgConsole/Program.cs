@@ -8,16 +8,18 @@ namespace rpgConsole
 {
     class Program
     {
+        private static Random rng = new Random();
+        internal List<Item> inventory;
         static void Main(string[] args)
         {
             bool run = true;
-            Console.WriteLine("Toto je úvod");
-            while (run)                                         //Havní smyčka programu
+            while (run)                                         
             {
-                Console.WriteLine(texts.gameMenuEntry);
+                Console.WriteLine(texts.gameMenuEntry + "\n");
+                Console.WriteLine(texts.helpQuoteMenu.Replace("\\n", "\n"));
                 switch (Console.ReadLine().ToLower())
                 {
-                    // '.Replace("\\n", "\n")' after resources string make it possible to use escape sequence
+                    // '.Replace("\\n", "\n")' after resources string make it possible to use escape sequences
                     case "help":
                         Console.WriteLine(texts.helpQuoteMenu.Replace("\\n", "\n"));
                         break;
@@ -25,8 +27,7 @@ namespace rpgConsole
                         Console.WriteLine("vypisuji //TODO: zobrazení informací o hře");
                         break;
                     case "zacit":
-                        Console.WriteLine("zahajuji  //TODO: Zahájení hry a vytvoření characteru");
-                        Hra();                                                                                                  // tady začíná hra  
+                        Hra();                                                                                                   
                         break;
                     
                     case "konec":
@@ -35,19 +36,20 @@ namespace rpgConsole
                     default: break;
                 }
             }
-            Console.Clear();    Console.WriteLine("Toto je konec hry\nStiskni jakékoliv tlačítko pro ukončení");    Console.ReadKey();  
+            Console.Clear();    Console.WriteLine("Dostal jsi se na konec světa\nStiskni jakékoliv tlačítko pro ukončení");    Console.ReadKey();  
         }
         private static Player CharacterCreation()
         {
-            Console.Write("Zadej jméno tvojí postavy: "); string name = Console.ReadLine();
-            return new Player(name, 20, 0, 1, 1);
+            Console.Write("Nyní pojmenuj svého hrdinu: "); string name = Console.ReadLine();
+            return new Player(name, rng.Next(15, 21), rng.Next(0,3), rng.Next(1, 3), 1);
         }
 
         private static void Hra()
         {
             Player player = CharacterCreation();
+            Console.WriteLine(texts.helpQuoteGame.Replace("\\n", "\n"));
             bool run = true;
-            while (run)                                         //Havní smyčka hry
+            while (run)                                        
             {
                 switch (Console.ReadLine().ToLower())
                 {
@@ -60,23 +62,27 @@ namespace rpgConsole
                         break;
 
                     case "arena":
-                        Console.WriteLine("vstupuji do areny  //TODO: implementace areny. klíčová součást hry");
+                        Arena.EnterArena( player );
                         break;
 
                     case "boj":
-                        Console.WriteLine("Začínám boj  //TODO: implementace bojového rozhraní, zahájení boje");
-                        //  Test boje
+                        //  test of battle
                         Enemy enemy = new Enemy("duch", 5, 1);
                         Fight.start(player, enemy);
-                        // Konecc testu boje
+                        // tests end
                         break;
 
                     case "prehled":
-                        Console.WriteLine(player.getInfo());
+                        Console.WriteLine(player.GetInfo());
                         break;
+
+                    case "cmd":
+                        Cmd.Verify(player);
+                        break;
+
                     case "clear": Console.Clear(); break;
 
-                    case "menu":
+                    case "z5":
                         run = false;
                         break;
 
