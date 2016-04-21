@@ -11,14 +11,14 @@ namespace rpgConsole
 
         internal static void start(Player player, Enemy enemy)
         {
-            Console.WriteLine("Boj hráče" + player.name + " prooooooooooooooooooooooti " + enemy.name + "ovi");
+            Console.WriteLine("Boj hráče" + player.name + " proti " + enemy.name + "ovi");
             if (fightLoop(player, enemy))
             {
-                Console.WriteLine("Vyhrál jsi :)");
+                Console.WriteLine("Vyhrál jsi");
                 player.AddExp(enemy.hp + enemy.dmg);
             }
             else
-                Console.WriteLine("njn, nikdo nemůže vyhrávat pořád a ty nejsi vyjímkou ;)");
+                Console.WriteLine("Prohrál jsi");
         }
         private static bool fightLoop(Player ply, Enemy enem)
         {
@@ -30,7 +30,7 @@ namespace rpgConsole
             }
             else if (plyPower == enemPower)
             {
-                Console.WriteLine("To bylo jen tak tak ..");
+                Console.WriteLine("To bylo jen tak tak ...");
                 return true; 
             }
             else

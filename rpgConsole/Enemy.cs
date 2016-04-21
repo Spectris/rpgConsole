@@ -8,7 +8,7 @@ namespace rpgConsole
 {
     class Enemy : Entity
     {
-        Item drop;
+        //Item drop;
         public Enemy(string name, int hp, int dmg)
         {
             this.name = name;

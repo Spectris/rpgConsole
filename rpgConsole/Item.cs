@@ -33,10 +33,10 @@ namespace rpgConsole
         }
         public string getDetails()
         {
-            if(this.itemType == ItemType.weapon)
+            if(itemType == ItemType.weapon)
                 return "" + name + "\t Cena: " + price + "\tPožkození: " + itemValue;
             else
-                return "" + name + "\t Cena: " + price + "\tOchrana: " + itemValue;
+                return "" + name + "\t Cena: " + price + "\tObrana: " + itemValue;
         }
     }
 }

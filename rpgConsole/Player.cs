@@ -31,7 +31,7 @@ namespace rpgConsole
                 lvl++;
                 exp -= expCap;
 
-                Console.WriteLine("Získal jsi novou úroveň, nyní si vyber kterou ze svých vlastností vylepšíš\n\t\t(O)brana\t(Z)draví\t(U)tok\n Pokud nespecifikuješ která vlastnost, kterou chceš zvýšit, bude vybráno náhodně");
+                Console.WriteLine("Získal jsi novou úroveň! Nyní si vyber jednu ze svých vlastností, kterou vylepšíš\n\t\t(O)brana\t(Z)draví\t(U)tok\n Pokud nevybereš ani jednu z možností, vylepšení bude náhodné");
                 increseStats();
             }
         }
@@ -53,8 +53,8 @@ namespace rpgConsole
             }
         }
 
-        public int GetDmg() { return this.dmg + weapon.itemValue; }
-        public int GetDef() { return this.def + armour.itemValue; }
+        public int GetDmg() { return dmg + weapon.itemValue; }
+        public int GetDef() { return def + armour.itemValue; }
 
         public string GetInfo()
         {
@@ -63,13 +63,14 @@ namespace rpgConsole
 
         private void StartItems()
         {
-            weapon = new Item("Dreveny mec", 1, 1, ItemType.weapon);
-            armour = new Item("Kozene brneny", 5, 1, ItemType.armour);
+            weapon = new Item("Dřevěný meč", 1, 1, ItemType.weapon);
+            armour = new Item("Kožené brnění", 5, 1, ItemType.armour);
         }
 
         public void GodMode()
         {
-            weapon = new Item("Gods Sword", 0, 1000, ItemType.weapon);
+            weapon = new Item("Božský měc", 0, 1000, ItemType.weapon);
+            armour = new Item("Božské brnění", 0, 1000, ItemType.armour);
         }
 
     }

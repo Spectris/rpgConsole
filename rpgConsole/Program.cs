@@ -9,7 +9,7 @@ namespace rpgConsole
     class Program
     {
         private static Random rng = new Random();
-        internal List<Item> inventory;
+
         static void Main(string[] args)
         {
             bool run = true;
@@ -36,6 +36,7 @@ namespace rpgConsole
                     default: break;
                 }
             }
+
             Console.Clear();    Console.WriteLine("Dostal jsi se na konec světa\nStiskni jakékoliv tlačítko pro ukončení");    Console.ReadKey();  
         }
         private static Player CharacterCreation()
