@@ -10,7 +10,7 @@ namespace rpgConsole
     {
         weapon,
         armour,
-        food
+        none
     }
     class Item
     {

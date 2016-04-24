@@ -9,7 +9,7 @@ namespace rpgConsole
     class Program
     {
         private static Random rng = new Random();
-
+        internal static Player player;
         static void Main(string[] args)
         {
             bool run = true;
@@ -47,12 +47,12 @@ namespace rpgConsole
 
         private static void Hra()
         {
-            Player player = CharacterCreation();
+            player = CharacterCreation();
             Console.WriteLine(texts.helpQuoteGame.Replace("\\n", "\n"));
             bool run = true;
             while (run)                                        
             {
-                switch (Console.ReadLine().ToLower())
+                switch (inputParser.ReadLine())
                 {
                     case "help":
                         Console.WriteLine(texts.helpQuoteGame.Replace("\\n", "\n"));
@@ -77,9 +77,9 @@ namespace rpgConsole
                         Console.WriteLine(player.GetInfo());
                         break;
 
-                    case "cmd":
-                        Cmd.Verify(player);
-                        break;
+                    //case "cmd":
+                    //    Cmd.Verify();
+                    //    break;
 
                     case "clear": Console.Clear(); break;
 

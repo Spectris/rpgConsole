@@ -20,23 +20,54 @@ namespace rpgConsole
             else
                 Console.WriteLine("Prohrál jsi");
         }
-        private static bool fightLoop(Player ply, Enemy enem)
+        private static bool fightLoop(Player player, Enemy enemy)
         {
-            int plyPower = ply.GetDmg() + ply.hp;
-            int enemPower = enem.dmg + enem.hp - ply.GetDef();
-            if(plyPower > enemPower)
+            //temp variables
+            int playersHp = player.hp;
+            int enemyHp = enemy.hp;
+            int rount = 0;
+            //
+
+            bool run = true;
+            while(run)
             {
-                return true;
+                rount++;
+                Console.WriteLine("na tahu je hráč\nZ - zaútočit\tS - stáhnout se");
+                switch(inputParser.ReadLine())
+                {
+                    case "z":
+                        enemyHp -= player.GetDmg();
+                        break;
+
+                    case "s":
+                        return false;
+
+                    default: break;
+                }
+                if (enemyHp <= 0)
+                    return true;
+                if (playersHp <= 0)
+                    return false;
+                playersHp -= enemy.dmg;
+                Console.Clear();Console.WriteLine("Round report\n\tPlayer hp:\t{0}\n\tEnemy hp:\t{1}\n", playersHp, enemyHp);
             }
-            else if (plyPower == enemPower)
-            {
-                Console.WriteLine("To bylo jen tak tak ...");
-                return true; 
-            }
-            else
-            {
-                return false;
-            }
+
+            //int plyPower = ply.GetDmg() + ply.hp;
+            //int enemPower = enem.dmg + enem.hp - ply.GetDef();
+            //if(plyPower > enemPower)
+            //{
+            //    return true;
+            //}
+            //else if (plyPower == enemPower)
+            //{
+            //    Console.WriteLine("To bylo jen tak tak ...");
+            //    return true; 
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+            return false;
         }
 
     }

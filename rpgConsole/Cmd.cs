@@ -9,15 +9,18 @@ namespace rpgConsole
 {
     class Cmd
     {
-        
+        private static Player player;
         private static readonly string password = "123";            
-        public static void Verify(Player player)
+        public static void Verify()
         {
            
             Console.Write("Příkazová konzole\n\tZadej heslo pro přístup: ");
 
             if (Console.ReadLine() == password)        //change this password to protect cmd from players (recomand to use hashed password as protection from decompilation)
+            {
+                player = Program.player;
                 cmd(player);
+            }
            
 
         }
