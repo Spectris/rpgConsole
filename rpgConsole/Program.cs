@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static rpgConsole.Global;
 
 namespace rpgConsole
 {
     class Program
     {
         private static Random rng = new Random();
-        internal static Player player;
+        
         static void Main(string[] args)
         {
             bool run = true;
@@ -77,10 +78,8 @@ namespace rpgConsole
                         Console.WriteLine(player.GetInfo());
                         break;
 
-                    //case "cmd":
-                    //    Cmd.Verify();
-                    //    break;
-
+                    case "mesto":
+                        break;
                     case "clear": Console.Clear(); break;
 
                     case "z5":

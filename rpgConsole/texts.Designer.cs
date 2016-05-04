@@ -70,7 +70,16 @@ namespace rpgConsole {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;Insert game name here&gt;.
+        ///   Looks up a localized string similar to Výtej v &lt;city name here&gt;\n\nVým že jsi tu poprvé takže ti to tu celé ukážu\n\t Kovárna - tady si můžeš nechat koupit nejrůznější zbraně nebo si nechat nějaké vyrobit\n\tZbrojírna - a tady si zas můžeš koupit brnění\n\t A další budovi nejsou ještě přístupné takžře si musíš počkat na plnou verzi ;).
+        /// </summary>
+        internal static string CityFirstTime {
+            get {
+                return ResourceManager.GetString("CityFirstTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;game name here&gt;.
         /// </summary>
         internal static string gameMenuEntry {
             get {

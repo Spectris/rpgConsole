@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static rpgConsole.Global;
 
 namespace rpgConsole
 {
@@ -21,13 +22,14 @@ namespace rpgConsole
 
         public ObjectList()
         {
-          
+            generateItems();
+            Armours = new List<Item>();
+            Swords = new List<Item>();
 
         }
         private void generateItems()
         {
             
-           
             // generate leather armors
             Armours.Add(createItem(ItemType.armour, "kožené brnění", 1));
             // generate copper armors

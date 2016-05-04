@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static rpgConsole.Global;
 
 namespace rpgConsole
 {
     static class Fight
     {
 
-        internal static void start(Player player, Enemy enemy)
+        internal static void start(Enemy enemy)
         {
             Console.WriteLine("Boj hráče" + player.name + " proti " + enemy.name + "ovi");
             if (fightLoop(player, enemy))
@@ -51,22 +52,22 @@ namespace rpgConsole
                 playersHp -= enemy.dmg;
                 Console.Clear();Console.WriteLine("Round report\n\tPlayer hp:\t{0}\n\tEnemy hp:\t{1}\n", playersHp, enemyHp);
             }
-
-            //int plyPower = ply.GetDmg() + ply.hp;
-            //int enemPower = enem.dmg + enem.hp - ply.GetDef();
-            //if(plyPower > enemPower)
-            //{
-            //    return true;
-            //}
-            //else if (plyPower == enemPower)
-            //{
-            //    Console.WriteLine("To bylo jen tak tak ...");
-            //    return true; 
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+            /*
+            int plyPower = ply.GetDmg() + ply.hp;
+            int enemPower = enem.dmg + enem.hp - ply.GetDef();
+            if (plyPower > enemPower)
+            {
+                return true;
+            }
+            else if (plyPower == enemPower)
+            {
+                Console.WriteLine("To bylo jen tak tak ...");
+                return true;
+            }
+            else
+            {
+                return false;
+            }*/
             return false;
         }
 

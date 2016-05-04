@@ -47,6 +47,7 @@
     <Compile Include="Enemy.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Fight.cs" />
+    <Compile Include="Global.cs" />
     <Compile Include="inputParser.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ObjectList.cs" />

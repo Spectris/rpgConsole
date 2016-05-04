@@ -8,6 +8,11 @@ namespace rpgConsole
 {
     class inputParser
     {
+        
+        /// <summary>
+        /// warn: when using during fight skip one round, but enemy will hit you
+        /// </summary>
+        /// <returns></returns>
         internal static string ReadLine()
         {
             string input = Console.ReadLine().ToLower();

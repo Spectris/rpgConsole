@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Security.Cryptography;
+using static rpgConsole.Global;
 
 namespace rpgConsole
 {
     class Cmd
     {
-        private static Player player;
         private static readonly string password = "123";            
         public static void Verify()
         {
@@ -18,7 +17,6 @@ namespace rpgConsole
 
             if (Console.ReadLine() == password)        //change this password to protect cmd from players (recomand to use hashed password as protection from decompilation)
             {
-                player = Program.player;
                 cmd(player);
             }
            

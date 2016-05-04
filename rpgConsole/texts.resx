@@ -120,8 +120,11 @@
   <data name="ArenaEntery" xml:space="preserve">
     <value>Výtej v aréně. Zde máš možnost bojovat proti nejlepším bojovníkům Reichu a vydobýt si tak slávu a bohatstvý</value>
   </data>
+  <data name="CityFirstTime" xml:space="preserve">
+    <value>Výtej v &lt;city name here&gt;\n\nVým že jsi tu poprvé takže ti to tu celé ukážu\n\t Kovárna - tady si můžeš nechat koupit nejrůznější zbraně nebo si nechat nějaké vyrobit\n\tZbrojírna - a tady si zas můžeš koupit brnění\n\t A další budovi nejsou ještě přístupné takžře si musíš počkat na plnou verzi ;)</value>
+  </data>
   <data name="gameMenuEntry" xml:space="preserve">
-    <value>&lt;Insert game name here&gt;</value>
+    <value>&lt;game name here&gt;</value>
   </data>
   <data name="helpQuoteGame" xml:space="preserve">
     <value>Nápověda k ovládaní\n    help - zobrazí nápovědu\n    pruzkum - průzkum okolí (prohledáš široké okolí)\n    prohledat - prohledá bezprostřední oklí hráče\n    boj - započne boj s nalezeným nepřítelem\n    prehled - zobrazí informace o hráči</value>

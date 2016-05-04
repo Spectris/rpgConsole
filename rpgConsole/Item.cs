@@ -3,15 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static rpgConsole.Global;
 
 namespace rpgConsole
 {
-    enum ItemType
-    {
-        weapon,
-        armour,
-        none
-    }
+    
     class Item
     {
         internal string name;
