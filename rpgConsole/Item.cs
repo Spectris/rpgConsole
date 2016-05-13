@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static rpgConsole.Global;
 
 namespace rpgConsole
 {
@@ -12,7 +11,7 @@ namespace rpgConsole
     {
         internal string name;
         internal int price, itemValue;                           //Zastupuje jak požkození u zbraně tak obranu u brnění
-        internal ItemType itemType;
+        internal Global.ItemType itemType;
         /// <summary>
         /// Constructor for Item object
         /// </summary>
@@ -20,7 +19,7 @@ namespace rpgConsole
         /// <param name="price"></param>
         /// <param name="itemValue"></param>
         /// <param name="itemType"></param>
-        public Item(string name, int price, int itemValue, ItemType itemType)
+        public Item(string name, int price, int itemValue, Global.ItemType itemType)
         {
             this.name = name;
             this.price = price;
@@ -29,7 +28,7 @@ namespace rpgConsole
         }
         public string getDetails()
         {
-            if(itemType == ItemType.weapon)
+            if(itemType == Global.ItemType.weapon)
                 return "" + name + "\t Cena: " + price + "\tPožkození: " + itemValue;
             else
                 return "" + name + "\t Cena: " + price + "\tObrana: " + itemValue;

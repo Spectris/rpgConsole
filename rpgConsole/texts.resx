@@ -127,7 +127,7 @@
     <value>&lt;game name here&gt;</value>
   </data>
   <data name="helpQuoteGame" xml:space="preserve">
-    <value>Nápověda k ovládaní\n    help - zobrazí nápovědu\n    pruzkum - průzkum okolí (prohledáš široké okolí)\n    prohledat - prohledá bezprostřední oklí hráče\n    boj - započne boj s nalezeným nepřítelem\n    prehled - zobrazí informace o hráči</value>
+    <value>Nápověda k ovládaní\n    help - zobrazí nápovědu\n    pruzkum - průzkum okolí (prohledáš široké okolí)\n    prohledat - prohledá bezprostřední oklí hráče\n    boj - započne boj s nalezeným nepřítelem\n    prehled - zobrazí informace o hráči\n    mesto - přesun do města</value>
   </data>
   <data name="helpQuoteMenu" xml:space="preserve">
     <value>Nápověda k ovládaní\n   help - zobrazí nápovědu\n   O - zobrazí informace o hře\n   zacit - započíst hru</value>

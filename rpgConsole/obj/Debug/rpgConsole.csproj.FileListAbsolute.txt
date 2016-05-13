@@ -27,3 +27,11 @@ C:\Users\Enrich\Documents\Visual Studio 2015\Projects\rpgConsole\rpgConsole\bin\
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\rpgConsole\rpgConsole\bin\Debug\rpgConsole.pdb
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\rpgConsole\rpgConsole\obj\Debug\rpgConsole.exe
 C:\Users\Enrich\Documents\Visual Studio 2015\Projects\rpgConsole\rpgConsole\obj\Debug\rpgConsole.pdb
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\bin\Debug\rpgConsole.exe.config
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\obj\Debug\rpgConsole.exe
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\obj\Debug\rpgConsole.pdb
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\obj\Debug\rpgConsole.csprojResolveAssemblyReference.cache
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\obj\Debug\rpgConsole.texts.resources
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\obj\Debug\rpgConsole.csproj.GenerateResource.Cache
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\bin\Debug\rpgConsole.exe
+H:\Dokumenty\Visual Studio 2013\Projects\rpgConsole-master\rpgConsole\bin\Debug\rpgConsole.pdb

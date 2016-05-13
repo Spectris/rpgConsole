@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static rpgConsole.Global;
 
 namespace rpgConsole
 {
@@ -17,7 +16,7 @@ namespace rpgConsole
 
             if (Console.ReadLine() == password)        //change this password to protect cmd from players (recomand to use hashed password as protection from decompilation)
             {
-                cmd(player);
+                cmd(Global.player);
             }
            
 

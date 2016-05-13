@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static rpgConsole.Global;
 
 namespace rpgConsole
 {
@@ -28,6 +27,7 @@ namespace rpgConsole
                         Console.WriteLine("vypisuji //TODO: zobrazení informací o hře");
                         break;
                     case "zacit":
+
                         Hra();                                                                                                   
                         break;
                     
@@ -48,7 +48,7 @@ namespace rpgConsole
 
         private static void Hra()
         {
-            player = CharacterCreation();
+            Global.player = CharacterCreation();
             Console.WriteLine(texts.helpQuoteGame.Replace("\\n", "\n"));
             bool run = true;
             while (run)                                        
@@ -64,21 +64,22 @@ namespace rpgConsole
                         break;
 
                     case "arena":
-                        Arena.EnterArena( player );
+                        Arena.EnterArena(Global.player);
                         break;
 
                     case "boj":
                         //  test of battle
                         Enemy enemy = new Enemy("duch", 5, 1);
-                        Fight.start(player, enemy);
+                        Fight.start(enemy);
                         // tests end
                         break;
 
                     case "prehled":
-                        Console.WriteLine(player.GetInfo());
+                        Console.WriteLine(Global.player.GetInfo());
                         break;
 
                     case "mesto":
+                        City.Entry();
                         break;
                     case "clear": Console.Clear(); break;
 

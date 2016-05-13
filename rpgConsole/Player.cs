@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static rpgConsole.Global;
 
 namespace rpgConsole
 {
@@ -11,7 +10,7 @@ namespace rpgConsole
     {
         private Random rng = new Random();
         internal Item weapon, armour;
-        internal int lvl, exp = 0, def, skillPoints = 0;
+        internal int lvl, exp = 0, def, skillPoints = 0, money = 50;
         public Player(string name, int hp, int def, int dmg, int lvl)
         {
             this.name = name;
@@ -59,19 +58,19 @@ namespace rpgConsole
 
         public string GetInfo()
         {
-           return("Hráč : \t" + name + Environment.NewLine + "Hp: \t\t" + hp + Environment.NewLine + "Def: \t\t" + def + Environment.NewLine + "Dmg: \t\t" + dmg + Environment.NewLine + "Exp: \t\t" + exp + Environment.NewLine + "Lvl: \t\t" + lvl + Environment.NewLine + Environment.NewLine + "Zbraň: \t" + weapon.getDetails() + Environment.NewLine + "Brnění: " + armour.getDetails());
+           return("Hráč : \t" + name + Environment.NewLine + "Hp: \t\t" + hp + Environment.NewLine + "Def: \t\t" + def + Environment.NewLine + "Dmg: \t\t" + dmg + Environment.NewLine + "Exp: \t\t" + exp + Environment.NewLine + "Lvl: \t\t" + lvl + Environment.NewLine + "Money: \t\t" + money + Environment.NewLine + Environment.NewLine + "Zbraň: \t" + weapon.getDetails() + Environment.NewLine + "Brnění: " + armour.getDetails());
         }
 
         private void StartItems()
         {
-            weapon = new Item("Dřevěný meč", 1, 1, ItemType.weapon);
-            armour = new Item("Kožené brnění", 5, 1, ItemType.armour);
+            weapon = new Item("Dřevěný meč", 1, 1, Global.ItemType.weapon);
+            armour = new Item("Kožené brnění", 5, 1, Global.ItemType.armour);
         }
 
         public void GodMode()
         {
-            weapon = new Item("Božský měc", 0, 1000, ItemType.weapon);
-            armour = new Item("Božské brnění", 0, 1000, ItemType.armour);
+            weapon = new Item("Božský měc", 0, 1000, Global.ItemType.weapon);
+            armour = new Item("Božské brnění", 0, 1000, Global.ItemType.armour);
         }
 
     }

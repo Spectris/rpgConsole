@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static rpgConsole.Global;
 
 namespace rpgConsole
 {
@@ -12,11 +11,11 @@ namespace rpgConsole
 
         internal static void start(Enemy enemy)
         {
-            Console.WriteLine("Boj hráče" + player.name + " proti " + enemy.name + "ovi");
-            if (fightLoop(player, enemy))
+            Console.WriteLine("Boj hráče" + Global.player.name + " proti " + enemy.name + "ovi");
+            if (fightLoop(Global.player, enemy))
             {
                 Console.WriteLine("Vyhrál jsi");
-                player.AddExp(enemy.hp + enemy.dmg);
+                Global.player.AddExp(enemy.hp + enemy.dmg);
             }
             else
                 Console.WriteLine("Prohrál jsi");
