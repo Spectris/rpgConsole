@@ -23,11 +23,7 @@ namespace rpgConsole
                     case "help":
                         Console.WriteLine(texts.helpQuoteMenu.Replace("\\n", "\n"));
                         break;
-                    case "o":
-                        Console.WriteLine("vypisuji //TODO: zobrazení informací o hře");
-                        break;
                     case "zacit":
-
                         Hra();                                                                                                   
                         break;
                     
@@ -53,37 +49,29 @@ namespace rpgConsole
             bool run = true;
             while (run)                                        
             {
-                switch (inputParser.ReadLine())
+                switch (Console.ReadLine().ToLower())
                 {
                     case "help":
                         Console.WriteLine(texts.helpQuoteGame.Replace("\\n", "\n"));
                         break;
-
-                    case "pruzkum":
-                        Console.WriteLine("Prozkoumávám //TODO: implementace průzkumu okolí");
-                        break;
-
                     case "arena":
                         Arena.EnterArena(Global.player);
                         break;
 
-                    case "boj":
-                        //  test of battle
-                        Enemy enemy = new Enemy("duch", 5, 1);
-                        Fight.start(enemy);
-                        // tests end
+                    case "les":
+                        Forest.Entry();
+                        break;
+
+                    case "obchodnik":
+                        ShopeKeeper.Entry();
                         break;
 
                     case "prehled":
                         Console.WriteLine(Global.player.GetInfo());
                         break;
-
-                    case "mesto":
-                        City.Entry();
-                        break;
                     case "clear": Console.Clear(); break;
 
-                    case "z5":
+                    case "konec":
                         run = false;
                         break;
 

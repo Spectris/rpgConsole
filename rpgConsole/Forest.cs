@@ -7,25 +7,49 @@ using System.Threading.Tasks;
 
 namespace rpgConsole
 {
-    class Arena
+    static class Forest
     {
-        private static Enemy boss1 = new Enemy("BOSS-EIN", 200, 15);
-        public static void EnterArena(Player player)
+
+        internal static void Entry()
         {
-            Console.WriteLine(texts.ArenaEntery + "\n\nChceš se utkat s prvním šampionem arény {0} (ano/ne)", boss1.name);
+            bool run = true;
+            while (run)
+            {
+                switch (Console.ReadLine())
+                {
+                    case "lov":
+                        HuntStart();
+                        break;
+
+                    case "help":
+                        Console.WriteLine(texts.helpQuoteForest.Replace("\\n","\n"));
+                        break;
+
+                    case "z5":
+                        run = false;
+                        break;
+
+                    default: break;
+                }
+            }
+        }
+
+        private static void HuntStart()
+        {
+            Enemy enemy = new Enemy(Global.objectList.enemyNames[Global.rng.Next(0, 6)], Global.rng.Next(1, 8), Global.rng.Next(1, 4));
+            Console.WriteLine("Během své výpravi jsi narazil na " + enemy.name + "\nChceš zaútočit? (ano/ne)");
+
             if (Console.ReadLine().ToLower() == "ano")
             {
-                if (fightLoop(Global.player, boss1))
+                if (fightLoop(Global.player, enemy))
                 {
                     Console.WriteLine("Vyhrál jsi");
-                    Global.player.AddExp(boss1.hp + boss1.dmg);
+                    Global.player.AddExp(enemy.hp + enemy.dmg);
                 }
                 else
                     Console.WriteLine("Prohrál jsi");
             }
-
         }
-
         private static bool fightLoop(Player player, Enemy enemy)
         {
             //temp variables
@@ -43,12 +67,10 @@ namespace rpgConsole
                 enemyHp -= player.GetDmg();
                 if ((enemy.dmg - player.GetDef()) < 0)
                     dealtDmg = 0;
-                else
-                    dealtDmg = enemy.dmg - player.GetDef();
                 Console.WriteLine(enemy.name + " na tebe zaútočil a způsobil ti zranění ve víši " + dealtDmg + " životů");
                 playersHp -= dealtDmg;
 
-                Console.WriteLine("____________________________________________________\nReport of round:\t{0}\n\tPlayer hp:\t{1}\n\tEnemy hp:\t{2}\n", round, playersHp, enemyHp);
+                Console.WriteLine("\n____________________________________________________\nReport of round:\t{0}\n\tPlayer hp:\t{1}\n\tEnemy hp:\t{2}\n", round, playersHp, enemyHp);
                 Thread.Sleep(600);
                 if (enemyHp <= 0)
                     return true;
@@ -58,5 +80,6 @@ namespace rpgConsole
             Console.WriteLine("Fight-afterfight : out of standart method range.");
             return false;
         }
+
     }
 }

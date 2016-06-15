@@ -8,9 +8,8 @@ namespace rpgConsole
 {
     class Player : Entity
     {
-        private Random rng = new Random();
         internal Item weapon, armour;
-        internal int lvl, exp = 0, def, skillPoints = 0, money = 50;
+        internal int lvl, exp = 0, def, skillPoints = 0, money = 0;
         public Player(string name, int hp, int def, int dmg, int lvl)
         {
             this.name = name;
@@ -21,6 +20,7 @@ namespace rpgConsole
             StartItems();
 
         }
+
         public void AddExp(int addedExp)
         {
             int lvlTemp = lvl;
@@ -44,7 +44,7 @@ namespace rpgConsole
             else if (key == "u") dmg++;
             else
             {
-                switch(rng.Next(0,3))
+                switch(Global.rng.Next(0,3))
                 {
                     case 0: def++; break;
                     case 1: hp++; break;

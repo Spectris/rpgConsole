@@ -16,7 +16,10 @@ namespace rpgConsole
         }
 
         //player instance
+        internal static Random rng = new Random();
         internal static Player player;
+        internal static ObjectList objectList = new ObjectList();
+
 
 
     }

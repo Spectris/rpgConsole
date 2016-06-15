@@ -6,29 +6,24 @@ using System.Threading.Tasks;
 
 namespace rpgConsole
 {
-    class ObjectList
+    internal class ObjectList
     {
 
-        internal List<Item> Armours = new List<Item>();
-        internal Dictionary<int, string> ArmoursD = new Dictionary<int, string>(); 
+        internal List<Item> Armours = new List<Item>(); 
 
         internal List<Item> Swords = new List<Item>();
-        internal Dictionary<int, string> SwordsD = new Dictionary<int, string>(); 
 
-        internal List<Enemy> Enemies;
+        internal List<string> enemyNames = new List<string>();
 
-        private Random rng = new Random();
 
-        public ObjectList()
+        internal ObjectList()
         {
             generateItems();
-            generateDesc();
+            generateEnemyNames();
         }
         private void generateItems()
         {
             
-            //generate leather armors
-            Armours.Add(createItem(Global.ItemType.armour, "kožené brnění", 1));
             // generate copper armors
             Armours.Add(createItem(Global.ItemType.armour, "měděné brnění", 3));
             // generate bronze armors
@@ -39,8 +34,6 @@ namespace rpgConsole
             Armours.Add(createItem(Global.ItemType.armour, "Ocelové brnění", 17));
 
 
-            // generate training sword
-            Swords.Add(createItem(Global.ItemType.weapon, "tréningový meč", 1));
             // generate copper sword
             Swords.Add(createItem(Global.ItemType.weapon, "měděný meč", 3));
             // generate bronze sword
@@ -52,42 +45,18 @@ namespace rpgConsole
 
 
         }
-        private void generateDesc()
+        private void generateEnemyNames()
         {
-            int index = 0, index2 = 0;
-
-            foreach(Item i in Swords)
-            {
-                SwordsD.Add(index++, i.name);
-            }
-            foreach(Item i in Armours)
-            {
-                ArmoursD.Add(index2++, i.name);
-            }
-        }
-
-        internal void printDecs(Global.ItemType itemType)
-        {
-            if(itemType == Global.ItemType.weapon)
-            {
-                foreach (var pair in SwordsD)
-                {
-                    Console.Write("{0}\t {1}", pair.Key, pair.Value);
-                    Console.WriteLine("\t\t" + Swords[pair.Key].price + "g");
-                }
-            }
-            else
-            {
-                foreach (var pair in ArmoursD)
-                {
-                    Console.Write("{0}\t {1}", pair.Key, pair.Value);
-                }
-            }
+            enemyNames.Add("Duch");
+            enemyNames.Add("Vlk");
+            enemyNames.Add("Medvěd");
+            enemyNames.Add("Dryáda");
+            enemyNames.Add("Bláto");
         }
 
         private Item createItem(Global.ItemType itemType, string itemName, int itemValue)
         {
-            return new Item(itemName, itemValue + (rng.Next(1, 3) * itemValue), itemValue, itemType);
+            return new Item(itemName, itemValue + ((Global.rng.Next(3, 5) * itemValue)), itemValue, itemType);
         }
     }
 }
