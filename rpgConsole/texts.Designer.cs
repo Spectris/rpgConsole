@@ -70,11 +70,29 @@ namespace rpgConsole {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Důl  na růhy\n    p - pracovat v povrchovém dole. Za těch pár kamínků co najdeš nedostaneš skoro nic, ale zase ti nehrozí žádné nebezpečí\n    s - Těžba ve štole. Tady už můžeš získat solidní množství růhů. Nicméně bych si dával pozor, tady jsou úrazy na dením pořádku.\n    h - Tady v hlubiném dole najdeš jen ty nejčistčí růhy, ale riziko je veliké. V hlubiných tunelech se můžeš lehce strati a cesta ven taky není zrovna procházka růžovou zahradou. Dost možná se ti může stát že přijdeš třeba o nohu.
+        /// </summary>
+        internal static string firstQuotaMine {
+            get {
+                return ResourceManager.GetString("firstQuotaMine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;RPG CONSOLE&gt;.
         /// </summary>
         internal static string gameMenuEntry {
             get {
                 return ResourceManager.GetString("gameMenuEntry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba.
+        /// </summary>
+        internal static string helpQuotaMine {
+            get {
+                return ResourceManager.GetString("helpQuotaMine", resourceCulture);
             }
         }
         
