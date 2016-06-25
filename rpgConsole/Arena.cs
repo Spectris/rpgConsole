@@ -39,7 +39,7 @@ namespace rpgConsole
             while (run)
             {
                 round++;
-                Console.WriteLine("Zaútočil jsi za :" + player.GetDmg());
+                Console.WriteLine("Udělil jsi požkození ve výši :" + player.GetDmg());
                 enemyHp -= player.GetDmg();
                 if ((enemy.dmg - player.GetDef()) < 0)
                     dealtDmg = 0;
@@ -48,7 +48,7 @@ namespace rpgConsole
                 Console.WriteLine(enemy.name + " na tebe zaútočil a způsobil ti zranění ve víši " + dealtDmg + " životů");
                 playersHp -= dealtDmg;
 
-                Console.WriteLine("____________________________________________________\nReport of round:\t{0}\n\tPlayer hp:\t{1}\n\tEnemy hp:\t{2}\n", round, playersHp, enemyHp);
+                Console.WriteLine("\n____________________________________________________\nZpráva za kolo:\t{0}\n\tZdraví hráče:\t{1}\n\tZdraví kořisti:\t{2}\n", round, playersHp, enemyHp);
                 Thread.Sleep(600);
                 if (enemyHp <= 0)
                     return true;

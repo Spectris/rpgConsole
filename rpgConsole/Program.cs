@@ -66,6 +66,10 @@ namespace rpgConsole
                         ShopeKeeper.Entry();
                         break;
 
+                    case "dul":
+                        Mine.Entry();
+                        break;
+
                     case "prehled":
                         Console.WriteLine(Global.player.GetInfo());
                         break;

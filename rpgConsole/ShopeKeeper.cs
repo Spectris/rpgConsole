@@ -98,12 +98,14 @@ namespace rpgConsole
                 {
                     Global.player.money -= Global.objectList.Swords[WIndex].price;
                     Console.WriteLine("Výborně! ... užij si svůj noví " + Global.objectList.Swords[WIndex].name);
+                    Global.player.weapon = Global.objectList.Swords[WIndex];
                 }
                 else
                     Console.WriteLine("Tak na tohle nemáš");
             }
 
         }
+
         private static void buyArmour(int WIndex)
         {
             Console.WriteLine("Brnění tě bude stát " + Global.objectList.Armours[WIndex].price + "g opravdu si ho chceš koupit? (ano/ne)");
@@ -113,6 +115,7 @@ namespace rpgConsole
                 {
                     Global.player.money -= Global.objectList.Armours[WIndex].price;
                     Console.WriteLine("Výborně! ... užij si své nové " + Global.objectList.Armours[WIndex].name);
+                    Global.player.armour = Global.objectList.Armours[WIndex];
                 }
                 else
                     Console.WriteLine("Tak na tohle nemáš");

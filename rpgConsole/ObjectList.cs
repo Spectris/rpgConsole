@@ -56,7 +56,7 @@ namespace rpgConsole
 
         private Item createItem(Global.ItemType itemType, string itemName, int itemValue)
         {
-            return new Item(itemName, itemValue + ((Global.rng.Next(3, 5) * itemValue)), itemValue, itemType);
+            return new Item(itemName, itemValue + ((Global.rng.Next(8, 16) * itemValue)), itemValue, itemType);
         }
     }
 }

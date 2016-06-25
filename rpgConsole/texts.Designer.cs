@@ -70,7 +70,7 @@ namespace rpgConsole {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Důl  na růhy\n    p - pracovat v povrchovém dole. Za těch pár kamínků co najdeš nedostaneš skoro nic, ale zase ti nehrozí žádné nebezpečí\n    s - Těžba ve štole. Tady už můžeš získat solidní množství růhů. Nicméně bych si dával pozor, tady jsou úrazy na dením pořádku.\n    h - Tady v hlubiném dole najdeš jen ty nejčistčí růhy, ale riziko je veliké. V hlubiných tunelech se můžeš lehce strati a cesta ven taky není zrovna procházka růžovou zahradou. Dost možná se ti může stát že přijdeš třeba o nohu.
+        ///   Looks up a localized string similar to Důl  na růhy\n    p - pracovat v povrchovém dole. Za těch pár kamínků co najdeš nedostaneš skoro nic, ale zase ti nehrozí žádné nebezpečí\n    s - Těžba ve štole. Tady už můžeš získat solidní množství růhů. Nicméně bych si dával pozor, tady jsou úrazy na dením pořádku.\n    h - Tady v hlubiném dole najdeš jen ty nejčistčí růhy, ale riziko je veliké. V hlubiných tunelech se můžeš lehce strati a cesta ven taky není zrovna procházka růžovou zahradou. Dost možná se ti může stát že přijdeš třeba o nohu nebo o ru [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string firstQuotaMine {
             get {
@@ -88,7 +88,7 @@ namespace rpgConsole {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba.
+        ///   Looks up a localized string similar to Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba\n    z5 - návrat do města.
         /// </summary>
         internal static string helpQuotaMine {
             get {
@@ -106,7 +106,7 @@ namespace rpgConsole {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mesto\nNápověda k ovládaní\n    help - zobrazí nápovědu\n    les - Vydáš se do lesa kde můžeš najít různá stvoření, která můžeš lovit\n    prehled - zobrazí informace o hráči\n    obchodnik - navtívíš místního obchodníka se zbraněmi a brnením \n    konec - vrátíš se do menu.
+        ///   Looks up a localized string similar to Mesto\nNápověda k ovládaní\n    help - zobrazí nápovědu\n    les - Vydáš se do lesa kde můžeš najít různá stvoření, která můžeš lovit\n    prehled - zobrazí informace o hráči\n    obchodnik - navtívíš místního obchodníka se zbraněmi a brnením\n    dul - zajdeš do místního dolu, kde si můžeš vydělat nějakou tu zlatku \n    konec - vrátíš se do menu.
         /// </summary>
         internal static string helpQuoteGame {
             get {
@@ -115,7 +115,7 @@ namespace rpgConsole {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Menu\nNápověda k ovládaní\n   help - zobrazí nápovědu\n   O - zobrazí informace o hře\n   zacit - započíst hru.
+        ///   Looks up a localized string similar to Menu\nNápověda k ovládaní\n   help - zobrazí nápovědu\n   zacit - započíst hru.
         /// </summary>
         internal static string helpQuoteMenu {
             get {

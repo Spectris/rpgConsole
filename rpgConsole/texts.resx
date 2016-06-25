@@ -121,22 +121,22 @@
     <value>Výtej v aréně. Zde máš možnost bojovat proti nejlepším bojovníkům Reichu a vydobýt si tak slávu a bohatstvý</value>
   </data>
   <data name="firstQuotaMine" xml:space="preserve">
-    <value>Důl  na růhy\n    p - pracovat v povrchovém dole. Za těch pár kamínků co najdeš nedostaneš skoro nic, ale zase ti nehrozí žádné nebezpečí\n    s - Těžba ve štole. Tady už můžeš získat solidní množství růhů. Nicméně bych si dával pozor, tady jsou úrazy na dením pořádku.\n    h - Tady v hlubiném dole najdeš jen ty nejčistčí růhy, ale riziko je veliké. V hlubiných tunelech se můžeš lehce strati a cesta ven taky není zrovna procházka růžovou zahradou. Dost možná se ti může stát že přijdeš třeba o nohu</value>
+    <value>Důl  na růhy\n    p - pracovat v povrchovém dole. Za těch pár kamínků co najdeš nedostaneš skoro nic, ale zase ti nehrozí žádné nebezpečí\n    s - Těžba ve štole. Tady už můžeš získat solidní množství růhů. Nicméně bych si dával pozor, tady jsou úrazy na dením pořádku.\n    h - Tady v hlubiném dole najdeš jen ty nejčistčí růhy, ale riziko je veliké. V hlubiných tunelech se můžeš lehce strati a cesta ven taky není zrovna procházka růžovou zahradou. Dost možná se ti může stát že přijdeš třeba o nohu nebo o ruku.</value>
   </data>
   <data name="gameMenuEntry" xml:space="preserve">
     <value>&lt;RPG CONSOLE&gt;</value>
   </data>
   <data name="helpQuotaMine" xml:space="preserve">
-    <value>Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba</value>
+    <value>Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba\n    z5 - návrat do města</value>
   </data>
   <data name="helpQuoteForest" xml:space="preserve">
     <value>Les\n\n    lov - půjdeš na lov nestvůr\n    z5 - návrat</value>
   </data>
   <data name="helpQuoteGame" xml:space="preserve">
-    <value>Mesto\nNápověda k ovládaní\n    help - zobrazí nápovědu\n    les - Vydáš se do lesa kde můžeš najít různá stvoření, která můžeš lovit\n    prehled - zobrazí informace o hráči\n    obchodnik - navtívíš místního obchodníka se zbraněmi a brnením \n    konec - vrátíš se do menu</value>
+    <value>Mesto\nNápověda k ovládaní\n    help - zobrazí nápovědu\n    les - Vydáš se do lesa kde můžeš najít různá stvoření, která můžeš lovit\n    prehled - zobrazí informace o hráči\n    obchodnik - navtívíš místního obchodníka se zbraněmi a brnením\n    dul - zajdeš do místního dolu, kde si můžeš vydělat nějakou tu zlatku \n    konec - vrátíš se do menu</value>
   </data>
   <data name="helpQuoteMenu" xml:space="preserve">
-    <value>Menu\nNápověda k ovládaní\n   help - zobrazí nápovědu\n   O - zobrazí informace o hře\n   zacit - započíst hru</value>
+    <value>Menu\nNápověda k ovládaní\n   help - zobrazí nápovědu\n   zacit - započíst hru</value>
   </data>
   <data name="helpQuoteShop" xml:space="preserve">
     <value>Obchod\n    help - zobrazí tuto nápovědu\n    z - přejdeš na výběr zbraní\n    b - přejdeš na výběr brnění\n    z5 - vrátíš se zpět do města</value>
