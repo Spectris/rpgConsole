@@ -79,15 +79,6 @@ namespace rpgConsole {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;RPG CONSOLE&gt;.
-        /// </summary>
-        internal static string gameMenuEntry {
-            get {
-                return ResourceManager.GetString("gameMenuEntry", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba\n    z5 - návrat do města.
         /// </summary>
         internal static string helpQuotaMine {

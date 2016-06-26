@@ -15,7 +15,13 @@ namespace rpgConsole
             bool run = true;
             while (run)                                         
             {
-                Console.WriteLine(texts.gameMenuEntry + "\n");
+
+#if DEBUG
+                Console.WriteLine("RPG CONSOLE [DEBUG]");
+#else
+                Console.WriteLine("RPG CONSOLE");
+#endif
+
                 Console.WriteLine(texts.helpQuoteMenu.Replace("\\n", "\n"));
                 switch (Console.ReadLine().ToLower())
                 {

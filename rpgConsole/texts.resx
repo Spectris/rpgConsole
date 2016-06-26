@@ -123,9 +123,6 @@
   <data name="firstQuotaMine" xml:space="preserve">
     <value>Důl  na růhy\n    p - pracovat v povrchovém dole. Za těch pár kamínků co najdeš nedostaneš skoro nic, ale zase ti nehrozí žádné nebezpečí\n    s - Těžba ve štole. Tady už můžeš získat solidní množství růhů. Nicméně bych si dával pozor, tady jsou úrazy na dením pořádku.\n    h - Tady v hlubiném dole najdeš jen ty nejčistčí růhy, ale riziko je veliké. V hlubiných tunelech se můžeš lehce strati a cesta ven taky není zrovna procházka růžovou zahradou. Dost možná se ti může stát že přijdeš třeba o nohu nebo o ruku.</value>
   </data>
-  <data name="gameMenuEntry" xml:space="preserve">
-    <value>&lt;RPG CONSOLE&gt;</value>
-  </data>
   <data name="helpQuotaMine" xml:space="preserve">
     <value>Důl na hůhy\n    p - povrchoví důl\n    s - štola\n    h - hlubiná těžba\n    z5 - návrat do města</value>
   </data>

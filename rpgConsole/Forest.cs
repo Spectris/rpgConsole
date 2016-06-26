@@ -72,7 +72,7 @@ namespace rpgConsole
                 Console.WriteLine(enemy.name + " na tebe zaútočil a způsobil ti zranění ve víši " + dealtDmg + " životů");
                 playersHp -= dealtDmg;
 
-                Console.WriteLine("\n____________________________________________________\nZpráva za kolo:\t{0}\n\tZdraví hráče:\t{1}\n\tZdraví kořisti:\t{2}\n", round, playersHp, enemyHp);
+                Console.WriteLine("\n____________________________________________________\nZpráva za kolo:\t{0}\n\tZdraví hráče:\t\t{1}\n\tZdraví kořisti:\t{2}\n", round, playersHp, enemyHp);
                 Thread.Sleep(600);
                 if (enemyHp <= 0)
                     return true;
